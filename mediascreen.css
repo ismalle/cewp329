@@ -1,0 +1,100 @@
+@media (max-width: 700px) {
+  .text .nav .container .postmodule .figure .texte {flex-direction: column;}
+
+  .text article {order:1;flex: 100%;}
+  .text aside {order:3;flex: 100%;}
+
+  .container {
+    width: 80%;
+    min-width: 200px;
+    height:60vh;
+    margin: 0 auto;
+    display:flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    background: #eee;
+  }
+
+  .postmodule {
+    position: relative;
+    z-index: 1;
+    display: block;
+    background: #FFFFFF;
+    min-width: 100px;
+    max-width: 150px;
+    margin:2px;
+    height: 150px;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s;
+  }
+  .postmodule:hover,
+  .hover {
+    box-shadow: 0px 1px 35px 0px rgba(0, 0, 0, 0.3);
+  }
+  .postmodule:hover .thumbnail img,
+  .hover .thumbnail img {
+    transform: scale(1.1);
+    opacity: 0.6;
+  }
+
+  .postmodule .thumbnail {
+    display: none;
+  }
+  .postmodule .thumbnail .date {
+  display: none;
+
+  }
+  .postmodule .thumbnail .date .day {
+      display: none;
+  }
+  .postmodule .thumbnail .date .month {
+    display: none;
+
+  }
+  .postmodule .thumbnail img {
+    display: none;
+
+  }
+  .postmodule .post-content {
+    position: absolute;
+    bottom: 0;
+    background: #FFFFFF;
+    width: 100%;
+    padding: 10px;
+    height: 150px;
+    transition: all 0.5s cubic-bezier(0.37, 0.75, 0.61, 1.05) 0s;
+  }
+  .postmodule .post-content .category {
+    position: absolute;
+    top: -36px;
+    left: 0;
+    background: cadetblue;
+    padding: 10px 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .postmodule .post-content .title {
+    margin: 0;
+    padding: 0 0 10px;
+    color: #333333;
+    font-size: 13px;
+    font-weight: 700;
+  }
+  .postmodule .post-content .sub_title {
+    margin: 0;
+    padding: 0 0 10px;
+    color: cadetblue;
+    font-size: 10px;
+    font-weight: 400;
+  }
+
+  .postmodule:hover .post-content .description {
+    display: none;
+  }
+
+  .postmodule .post-content .post-meta {
+    display: none;
+  }
